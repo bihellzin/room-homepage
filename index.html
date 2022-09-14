@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+  <title>Room homepage</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="top-header">
+        <img class="hamburger" src="./images/icon-hamburger.svg" alt="">
+        <img class="logo" src="./images/logo.svg" alt="">
+        <ul class="desktop-navigation">
+          <li class="navigation-item">Home</li>
+          <li class="navigation-item">Shop</li>
+          <li class="navigation-item">About</li>
+          <li class="navigation-item">Contact</li>
+        </ul>
+      </div>
+      <div class="mobile-navigation none">
+        <img src="./images/icon-close.svg" alt="" class="close">
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="slide">
+        <picture id="slide-1">
+          <source media="(max-width: 400px)" srcset="./images/mobile-image-hero-1.jpg">
+          <img class="slide-image" src="./images/desktop-image-hero-1.jpg" alt="">
+        </picture>
+        <picture id="slide-2" class="none">
+          <source media="(max-width: 400px)" srcset="./images/mobile-image-hero-2.jpg">
+          <img class="slide-image" src="./images/desktop-image-hero-2.jpg" alt="">
+        </picture>
+        <picture id="slide-3" class="none">
+          <source media="(max-width: 400px)" srcset="./images/mobile-image-hero-3.jpg">
+          <img class="slide-image" src="./images/desktop-image-hero-3.jpg" alt="">
+        </picture>
+        <div class="arrows-mobile">
+          <button class="arrow left-arrow">
+            <img src="./images/icon-angle-left.svg" alt="">
+          </button>
+          <button class="arrow right-arrow">
+            <img src="./images/icon-angle-right.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <section class="cta-section">
+        <h1 class="cta-title">
+          Discover innovative ways to decorate
+        </h1>
+        <p class="cta-text">
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <button class="cta">
+          <p>Shop now</p>
+          <img class="cta-arrow" src="./images/icon-arrow.svg" alt="">
+        </button>
+        <!-- <div class="arrows-desktop">
+          <button class="arrow left-arrow">
+            <img src="./images/icon-angle-left.svg" alt="">
+          </button>
+          <button class="arrow right-arrow">
+            <img src="./images/icon-angle-right.svg" alt="">
+          </button>
+        </div> -->
+      </section>
+    </section>
+    <section class="about">
+      <img class="image" src="./images/image-about-dark.jpg" alt="">
+      <div class="about-text">
+        <h1 class="about-title">About our furniture</h1>
+        <p class="about-description">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+      <img class="image" src="./images/image-about-light.jpg" alt="">
+    </section>
+  </main>
+  <div class="overlay-disabled"></div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
