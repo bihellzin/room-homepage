@@ -13,18 +13,7 @@ const heroLabels = [
     }
 ]
 
-const mobileImages = [
-    './images/desktop-image-hero-1.jpg',
-    './images/desktop-image-hero-2.jpg',
-    './images/desktop-image-hero-3.jpg'
-]
-
 let slideIndex = 0;
-
-const isMobileSize = window.innerWidth < 540;
-let screenMode = window.innerWidth < 540 ? 'mobile' : 'desktop';
-
-const desktopImages = []
 
 const hamburger = document.querySelector('.hamburger')
 hamburger.addEventListener('click', () => {
@@ -42,10 +31,6 @@ close.addEventListener('click', () => {
     document.querySelector('.logo').classList.remove('none')
 })
 
-function rightArrowClick() {
-    './images/mobile-image-hero-1.jpg'
-}
-
 document.querySelector('.right-arrow').addEventListener('click', () => {
     document.querySelector(`#slide-${slideIndex + 1}`).classList.add('none')
     slideIndex = slideIndex === 2 ? slideIndex = 0 : slideIndex + 1;
@@ -61,5 +46,3 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
     document.querySelector('.cta-title').textContent = heroLabels[slideIndex].title
     document.querySelector('.cta-text').textContent = heroLabels[slideIndex].text
 })
-
-// window.addEventListener('resize', console.log)
